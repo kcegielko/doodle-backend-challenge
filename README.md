@@ -19,3 +19,21 @@ Implementation:
 
 Dedicated unit tests for the algorithm itself:  
 `SweepLineAlgorithmTest.java`
+
+### 2) Facade Layer
+Higher-level interface that orchestrates the algorithm and provides convenient methods for the application.
+
+Main entry point:  
+`OverlappingFacade.java`
+
+Key method added:
+- `getTimeSlotsWithoutMeetings(...)`  
+  → returns all time slots that are completely free
+
+Implementation details:
+- Accepts list of users time slots with their meetings
+- Uses the sweep-line algorithm under the hood
+- Returns sorted list of free intervals (start → end)
+
+Dedicated integration / facade tests:  
+`OverlappingFacadeTest.java`
