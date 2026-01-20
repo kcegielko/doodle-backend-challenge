@@ -6,14 +6,11 @@ import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
-
 @Getter
 @EqualsAndHashCode(of = {"name", "email"})
 @ToString
 public class User {
 
-    private UUID id;
     private String name;
     private String email;
     private List<TimeSlot> availableTimeSlots;

@@ -1,6 +1,15 @@
 # doodle-backend-challenge
 Doodle Backend Challenge
 
+## Approach & Focus
+
+In this solution I deliberately focused **primarily on business logic, core algorithms, and correctness of the time-slot overlapping / availability mechanics** — rather than on persistence layer (database storage), REST API endpoints, input validation, authentication, or full Spring Boot configuration.
+
+I considered typical CRUD operations, REST controllers, DTO ↔ entity mapping, HTTP exception handling, and database setup to be **very standard and repetitive** elements in most backend challenges.  
+Far more valuable here is demonstrating a solid understanding of the problem domain, choosing and implementing an appropriate algorithm, and writing clean, well-tested, maintainable code that solves the heart of the task.
+
+**All essential application behaviors are demonstrated and verified through unit and integration tests** — these tests serve as the best living documentation of how the system actually works.
+
 ## Steps:
 
 ### 1) Core Algorithm
@@ -37,3 +46,12 @@ Implementation details:
 
 Dedicated integration / facade tests:  
 `OverlappingFacadeTest.java`
+
+### 3) Scheduling Service & User-level Logic
+Service responsible for user-specific availability calculations, meetings subtraction and multi-user overlapping logic.
+
+Main class:  
+`SchedulingService.java`
+
+Dedicated unit & integration tests covering main scenarios:  
+`SchedulingServiceTest.java`
