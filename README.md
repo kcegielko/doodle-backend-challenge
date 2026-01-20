@@ -1,5 +1,4 @@
-# doodle-backend-challenge
-Doodle Backend Challenge
+# Doodle Backend Challenge
 
 ## Approach & Focus
 
@@ -9,6 +8,10 @@ I considered typical CRUD operations, REST controllers, DTO ↔ entity mapping, 
 Far more valuable here is demonstrating a solid understanding of the problem domain, choosing and implementing an appropriate algorithm, and writing clean, well-tested, maintainable code that solves the heart of the task.
 
 **All essential application behaviors are demonstrated and verified through unit and integration tests** — these tests serve as the best living documentation of how the system actually works.
+
+## Use cases:
+
+`SchedulingServiceTest.java` is the file that shows use cases for the solution.
 
 ## Steps:
 
@@ -55,3 +58,6 @@ Main class:
 
 Dedicated unit & integration tests covering main scenarios:  
 `SchedulingServiceTest.java`
+
+# Running:
+***docker compose up --build***
